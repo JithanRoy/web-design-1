@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+input,button {
+    outline: none;
+}
+
+.custom-button {
+    background: #ff531e;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    box-shadow: 10px 5px 5px lightgray;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.custom-button:hover {
+    background: #e75c32;
+    font-size: 14px;
+    transition: 0.5s ease-in-out;
+    font-weight: 700;
+}
+
+/*============ Navigation =============================*/
+.header-part {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+nav ul li a{
+    height: 40px;
+    line-height: 43px;
+    margin: 3px;
+    padding: 0 22px;
+    display: flex;
+    font-size: 0/77rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease-in-out;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+nav ul li a:hover {
+    background-color: #ff531e;
+    color: #ffffff;
+    align-items: center;
+}
+
+.logo img {
+    width: 80%;
+}
+
+.header-part .menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    align-items: center;
+}
+
+/*======== main ======= */
+.main {
+    width: 100%;
+    height: 768px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../images/header-bg.jpg");
+    box-sizing: border-box;
+}
+
+.main-heading-part {
+    width: 40%;
+    padding-top: 150px;
+}
+
+.main-heading-part h1{
+    font-size: 44px;
+    letter-spacing: 3px;
+    margin-bottom: 1rem;
+}
+
+.main-heading-part h1 span{
+    color: #ff531e;
+}
+
+/*--------- About Section ---------- */
+.about {
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+.about-left {
+    width: 60%;
+    z-index: 1;
+}
+.about-right {
+    width: 40%;
+    position: absolute;
+    text-align: end;
+    top: 30%;
+    left: 50%;
+}
+.about-right span {
+    text-align: end;
+    letter-spacing: 5px;
+    font-size: 13px;
+    font-weight: 400;
+    color: lightgray;
+}
+.about-right h1 {
+    text-align: end;
+    margin-left: 33px;
+    font-size: 52px;
+    font-weight: 700;
+}
+
+.about-left img {
+    width: 100%;
+}
+
+/* ============ feature card section ============ */
+.feature-top {
+    text-align: center;
+    margin: 36px 0px;
+}
+
+.feature-top p {
+    color: lightgray;
+    letter-spacing: 5px;
+}
+
+.feature-top h1 {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.features-card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    row-gap: 2rem;
+}
+
+.features p {
+    text-align: center;
+}
+
+.features h1 {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.features-card img {
+    width: 12%;
+    text-align: left;
+}
+
+.features-card h1 {
+    text-align: left;
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+.features-card p {
+    font-size: 15px;
+}
+
+/* ======== footer ========*/
+footer {
+    width: 100%;
+    background: url(../images/footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin-top: 100px;
+    padding: 150px 0;
+}
+
+footer span {
+    color: #ffffff;
+    letter-spacing: 5px;
+}
+footer h1 {
+    font-size: 50px;
+    color: #ffffff;
+    margin: 10px 0px 50px;
+    font-weight: 700;
+}
+footer p {
+    color: #ffffff;
+    font-size: 18px;
+}
